@@ -7,11 +7,10 @@ export const ThemeContext = React.createContext()
 export default function App() {
 
 return (
-  <ThemeProvider>
-    <FunctionContextComponent />
+  <ThemeProvider> // (1) THIS IS THE LOGIC THAT CONTROLS THE FUNCTION.CONTEXT.COMPONENT
+    <FunctionContextComponent /> // (2) THIS IS THE CONTENT THAT IS CONTROLLED BY THE THEME.PROVIDER
   </ThemeProvider>
 )
 }
-//This file uses two components: FunctionContextComponent and ThemeContext
-//Our First square = ThemeProvider(ThemeContext) contains our Second square = FunctionContextComponent
+// Summary: FIRST SQUARE = THEME.PROVIDER >>CONTAINS>> SECOND SQUARE = FUNCTION.CONTEXT.COMPONENT
 
