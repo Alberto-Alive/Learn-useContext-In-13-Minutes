@@ -13,11 +13,14 @@ export default function FunctionContextComponent() {
     return (
         <>
         <button onClick={toggleTheme}> Toggle Theme</button>  
-        // (4) toggleTheme (line 15) asks useThemeUpdate() (line 6) to do its job when button is clicked
         <div style={themeStyles}> Function Theme </div>
-        // (5) this is the element we apply all this madness so we can see it either in a darkish or lightish shade... 
         </>
     )
+       
 }
+ // 
+//(4) line 15 toggleTheme (line 15) asks useThemeUpdate() (line 6) to do its job when button is clicked
+// (5) line 16 this is the element we apply all this madness so we can see it either in a darkish or lightish shade... 
+
 // Summary: Think of this as the SECOND SQUARE
 

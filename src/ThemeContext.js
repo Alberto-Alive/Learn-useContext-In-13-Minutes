@@ -19,12 +19,15 @@ export function ThemeProvider({ children}) {
     }
 
     return (
-        <ThemeContext.Provider value={darkTheme}> // (5) set this ThemeContext to darkTheme = true
-            <ThemeUpdateContext.Provider value={toggleTheme}>   // (6) set this ThemeUpdateContext to darkTheme = false
-                {children} // (7) this children will actually be the >> FunctionContextComponent line 15 and 16
+        <ThemeContext.Provider value={darkTheme}> 
+            <ThemeUpdateContext.Provider value={toggleTheme}>   
+                {children} 
             </ThemeUpdateContext.Provider>
         </ThemeContext.Provider>
     )
+        // (5) line 22: set this ThemeContext to darkTheme = true
+            // (6)line 23: set this ThemeUpdateContext to darkTheme = false
+               // (7)line 24: this children will actually be the >> FunctionContextComponent line 15 and 16
 }
 //Summary: think of this as the FIRST SQUARE
 
