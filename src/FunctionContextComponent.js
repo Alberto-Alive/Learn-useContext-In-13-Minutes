@@ -17,3 +17,9 @@ export default function FunctionContextComponent() {
         </>
     )
 }
+
+//This file is the Second square, this square's code is from line 4 to line 19: this second square is supposed to have what you see on the display i.e buttons, text, colors, etc.
+//Line 5 is used on line 8 and 9
+//Line 6 is used on line 15: it takes the logic from ThemeContext and changes between themes.
+//Line 7 is like a small CSS square where we store the colors for either the dark theme or the light theme.
+//Summary: Second square uses useTheme() and useThemeUpdate(), defines the themeStyles() and displays the toggleTheme button and themeStyles div field.
