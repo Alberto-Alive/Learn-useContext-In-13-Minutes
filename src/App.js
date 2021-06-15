@@ -12,5 +12,6 @@ return (
   </ThemeProvider>
 )
 }
-
+//This file uses two components: FunctionContextComponent and ThemeContext
+//Our First square = ThemeProvider(ThemeContext) contains our Second square = FunctionContextComponent
 
