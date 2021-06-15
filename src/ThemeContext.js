@@ -26,3 +26,9 @@ export function ThemeProvider({ children}) {
         </ThemeContext.Provider>
     )
 }
+
+
+//This is the First Square, this square code spans from line 14 to line 28: this square is supposed to be the logic that wraps around the second square and make everything switch.
+//Line 15 is the useState set to true: it means that darktheme will have the value true initially but when you click on the toggleTheme button you will set this to false.
+//Line 17 is function that takes the second state(setDarkTheme) of the state(darkTheme) and says: use this object 'prevDarkTheme' to get the state of 'darkTheme' and switch it to its opposite (false).
+//Summary: This first square is like a logic skeleton: it decides where the code should sit and how it should act. This first square gets its info from the second square which acts like a database.
